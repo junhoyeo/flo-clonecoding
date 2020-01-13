@@ -4,9 +4,10 @@ import styled from "styled-components";
 export default function Navbar() {
   const Bar = styled.div`
     background-color: #ffffff;
+    width: 100%;
     height: 95px;
-    border: 1px;
-    text-align: center;
+    margin-top: 0;
+    position: fixed;
   `;
 
   const Logo = styled.img.attrs({
@@ -30,6 +31,20 @@ export default function Navbar() {
     float: left;
     margin-top: 43px;
     margin-left: 12.2%;
+  `;
+
+  const Rightcontents = styled.span`
+    float: right;
+    margin-top: 43px;
+    margin-right: 12.3%;
+  `;
+
+  const RightElement = styled.a`
+    color: #8c8c8c;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 13px;
   `;
 
   const Searchbox = styled.span`
@@ -73,6 +88,12 @@ export default function Navbar() {
             <Searchinput />
           </Searchbox>
         </Leftcontents>
+
+        <Rightcontents>
+          <RightElement href=".">FLO 소개</RightElement>
+          <RightElement href=".">로그인</RightElement>
+          <RightElement href=".">회원가입</RightElement>
+        </Rightcontents>
       </Bar>
     </Fragment>
   );

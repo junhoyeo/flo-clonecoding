@@ -1,6 +1,9 @@
 import React from "react";
-import Navbar from "./components/Navbar";
 import { createGlobalStyle } from "styled-components";
+
+import Navbar from "./components/Navbar";
+
+import Test from "./components/NavbarScrolltest";
 
 const GlobalStyles = createGlobalStyle`
 @font-face {
@@ -9,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
 }
 body{
   font-family:'NBG', sans-serif;
+  background-color:#dddddd;
 }
 `;
 
@@ -17,6 +21,7 @@ function App() {
     <div className="App">
       <GlobalStyles />
       <Navbar />
+      <Test />
     </div>
   );
 }
