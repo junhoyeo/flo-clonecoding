@@ -27,16 +27,16 @@ export default function Navbar() {
     margin: 14px;
   `;
 
-  const Leftcontents = styled.span`
+  const LeftContents = styled.span`
     float: left;
     margin-top: 43px;
-    margin-left: 12.2%;
+    margin-left: 12.3%;
   `;
 
-  const Rightcontents = styled.span`
+  const RightContents = styled.span`
     float: right;
     margin-top: 43px;
-    margin-right: 12.3%;
+    margin-right: 11.5%;
   `;
 
   const RightElement = styled.a`
@@ -76,7 +76,7 @@ export default function Navbar() {
   return (
     <Fragment>
       <Bar>
-        <Leftcontents>
+        <LeftContents>
           <a href=".">
             <Logo />
           </a>
@@ -87,13 +87,12 @@ export default function Navbar() {
             <Searchicon />
             <Searchinput />
           </Searchbox>
-        </Leftcontents>
-
-        <Rightcontents>
+        </LeftContents>
+        <RightContents>
           <RightElement href=".">FLO 소개</RightElement>
           <RightElement href=".">로그인</RightElement>
           <RightElement href=".">회원가입</RightElement>
-        </Rightcontents>
+        </RightContents>
       </Bar>
     </Fragment>
   );
