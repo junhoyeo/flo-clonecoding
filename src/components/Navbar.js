@@ -8,6 +8,7 @@ export default function Navbar() {
     height: 95px;
     margin: 0 auto;
     position: fixed;
+    z-index: 100;
   `;
 
   const Logo = styled.img.attrs({
@@ -44,7 +45,7 @@ export default function Navbar() {
     text-decoration: none;
     font-size: 13px;
     font-weight: 400;
-    margin: 13px;
+    margin: 12.5px;
   `;
 
   const Searchbox = styled.span`

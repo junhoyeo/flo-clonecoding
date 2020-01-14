@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
 import Navbar from "./components/Navbar";
-import Slider from "./components/Slider";
+import Slider from "./components/Slider/Slider";
 
 import Test from "./components/NavbarScrolltest";
 
@@ -14,14 +14,14 @@ const GlobalStyles = createGlobalStyle`
 }
 body{
   font-family:'NBG', sans-serif;
-  background-color:#dddddd;
+  background-color:#a3a3a3;
 }
 `;
 
 const Wrap = styled.div`
   width: 100%;
   min-width: 600px;
-  max-width: 1000px;
+  max-width: 955px;
   height: 100%;
   margin: 0 auto;
   background-color: none;
@@ -34,8 +34,8 @@ function App() {
 
       <Navbar />
       <Wrap>
-        <Test />
         <Slider />
+        <Test />
       </Wrap>
     </div>
   );

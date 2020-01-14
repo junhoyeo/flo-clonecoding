@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
+import "./Slider1.css";
+import "./Slider2.css";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -13,32 +15,20 @@ export default class SimpleSlider extends Component {
     };
 
     const Group = styled.div`
-      width: 500px;
-      text-align: center;
+      width: auto;
+      padding-top: 135px;
     `;
 
     const ContainerEl = styled.div`
       background-color: #444444;
       color: #ffffff;
-      height: 200px;
+      height: 315px;
       text-align: center;
+      border-radius: 6px;
     `;
 
     return (
       <Group>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charset="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
-
-        <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
             <ContainerEl>1</ContainerEl>
@@ -48,6 +38,12 @@ export default class SimpleSlider extends Component {
           </div>
           <div>
             <ContainerEl>3</ContainerEl>
+          </div>
+          <div>
+            <ContainerEl>4</ContainerEl>
+          </div>
+          <div>
+            <ContainerEl>5</ContainerEl>
           </div>
         </Slider>
       </Group>
