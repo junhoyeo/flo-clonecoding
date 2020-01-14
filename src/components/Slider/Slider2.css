@@ -35,7 +35,7 @@
   height: 20px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  transform: translate(0, -100%);
   cursor: pointer;
   color: transparent;
   border: none;
@@ -58,44 +58,54 @@
 }
 .slick-next.slick-disabled:before,
 .slick-prev.slick-disabled:before {
-  opacity: 0.25;
+  opacity: 0;
+  cursor: default;
 }
 .slick-next:before,
 .slick-prev:before {
-  font-size: 20px;
-  line-height: 1;
-  opacity: 0.75;
-  color: #fff;
+  font-size: 1px;
+  line-height: 0;
+  font-family: FontAwesome;
+  color: #363636;
+  font-weight: 100;
 }
 .slick-prev {
-  left: -25px;
+  left: -3.7%;
 }
 [dir="rtl"] .slick-prev {
-  right: -25px;
-  left: auto;
+  right: 0;
 }
 .slick-prev:before {
-  content: "<";
+  content: url("../../assets/angle-left.png");
 }
 .slick-next:before,
 [dir="rtl"] .slick-prev:before {
-  content: ">";
+  content: url("../../assets/angle-right.png");
 }
 .slick-next {
-  right: -25px;
+  right: -2.7%;
 }
 [dir="rtl"] .slick-next {
   right: auto;
   left: -25px;
 }
 
+.slick-next:hover:before {
+  content: url("../../assets/angle-right-active.png");
+}
+
+.slick-prev:hover:before {
+  content: url("../../assets/angle-left-active.png");
+}
+
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
 .slick-dots {
-  bottom: -25px;
+  bottom: -35px;
   width: 100%;
   margin: 0;
+
   list-style: none;
   text-align: center;
 }
@@ -104,8 +114,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0 5px;
-  padding: 0;
+  margin: -2px;
   cursor: pointer;
 }
 .slick-dots li button {
@@ -128,21 +137,22 @@
 .slick-dots li button:focus:before,
 .slick-dots li button:hover:before {
   opacity: 1;
+  color: #3f3fff;
 }
 .slick-dots li button:before {
-  font-size: 6px;
+  font-size: 60px;
   line-height: 20px;
   position: absolute;
   top: 0;
   left: 0;
   width: 20px;
   height: 20px;
-  content: "●";
+  content: "·";
   text-align: center;
-  opacity: 0.25;
-  color: #000;
+  opacity: 1;
+  color: #c2c2c2;
 }
+
 .slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: #000;
+  color: #3f3fff;
 } /*# sourceMappingURL=slick-theme.min.css.map */

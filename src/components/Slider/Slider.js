@@ -16,13 +16,13 @@ export default class SimpleSlider extends Component {
 
     const Group = styled.div`
       width: auto;
-      padding-top: 135px;
+      padding-top: 130px;
     `;
 
     const ContainerEl = styled.div`
-      background-color: #444444;
+      background-color: #4c4863;
       color: #ffffff;
-      height: 315px;
+      height: 320px;
       text-align: center;
       border-radius: 6px;
     `;
@@ -31,19 +31,19 @@ export default class SimpleSlider extends Component {
       <Group>
         <Slider {...settings}>
           <div>
-            <ContainerEl>1</ContainerEl>
+            <ContainerEl> </ContainerEl>
           </div>
           <div>
-            <ContainerEl>2</ContainerEl>
+            <ContainerEl></ContainerEl>
           </div>
           <div>
-            <ContainerEl>3</ContainerEl>
+            <ContainerEl></ContainerEl>
           </div>
           <div>
-            <ContainerEl>4</ContainerEl>
+            <ContainerEl></ContainerEl>
           </div>
           <div>
-            <ContainerEl>5</ContainerEl>
+            <ContainerEl></ContainerEl>
           </div>
         </Slider>
       </Group>
