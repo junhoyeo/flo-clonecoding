@@ -6,7 +6,7 @@ export default function Navbar() {
     background-color: #ffffff;
     width: 100%;
     height: 95px;
-    margin-top: 0;
+    margin: 0 auto;
     position: fixed;
   `;
 
@@ -30,13 +30,13 @@ export default function Navbar() {
   const LeftContents = styled.span`
     float: left;
     margin-top: 43px;
-    margin-left: 12.3%;
+    /* margin-left: 12.3%; */
   `;
 
   const RightContents = styled.span`
     float: right;
     margin-top: 43px;
-    margin-right: 11.5%;
+    /* margin-right: 11.5%; */
   `;
 
   const RightElement = styled.a`
@@ -49,7 +49,7 @@ export default function Navbar() {
 
   const Searchbox = styled.span`
     margin-left: 22px;
-    border: 1px solid #cccccc;
+    border: 1px solid #dddddd;
     padding: 7px;
     border-radius: 100px;
   `;
@@ -71,28 +71,51 @@ export default function Navbar() {
     width: 280px;
     margin-right: 25px;
     font-family: "NBG", sans-serif;
+
+    @media screen and (max-width: 1190px) {
+      width: 135px;
+    }
+  `;
+
+  const Contents = styled.div`
+    text-align: center;
+    width: 76.2%;
+    height: 95px;
+
+    margin-left: 12.3%;
+    margin-right: 11.5%;
+
+    @media screen and (max-width: 1190px) {
+      width: 94%;
+      min-width: 910px;
+      margin-left: 3%;
+      margin-right: 3%;
+      position: fixed;
+    }
   `;
 
   return (
     <Fragment>
       <Bar>
-        <LeftContents>
-          <a href=".">
-            <Logo />
-          </a>
-          <LeftElement href=".">둘러보기</LeftElement>
-          <LeftElement href=".">보관함</LeftElement>
-          <LeftElement href=".">이용권</LeftElement>
-          <Searchbox>
-            <Searchicon />
-            <Searchinput />
-          </Searchbox>
-        </LeftContents>
-        <RightContents>
-          <RightElement href=".">FLO 소개</RightElement>
-          <RightElement href=".">로그인</RightElement>
-          <RightElement href=".">회원가입</RightElement>
-        </RightContents>
+        <Contents>
+          <LeftContents>
+            <a href=".">
+              <Logo />
+            </a>
+            <LeftElement href=".">둘러보기</LeftElement>
+            <LeftElement href=".">보관함</LeftElement>
+            <LeftElement href=".">이용권</LeftElement>
+            <Searchbox>
+              <Searchicon />
+              <Searchinput />
+            </Searchbox>
+          </LeftContents>
+          <RightContents>
+            <RightElement href=".">FLO 소개</RightElement>
+            <RightElement href=".">로그인</RightElement>
+            <RightElement href=".">회원가입</RightElement>
+          </RightContents>
+        </Contents>
       </Bar>
     </Fragment>
   );
