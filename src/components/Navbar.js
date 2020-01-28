@@ -6,7 +6,7 @@ export default function Navbar() {
     background-color: #ffffff;
     width: 100%;
     height: 95px;
-    margin: 0 auto;
+    margin: 0 20px 0 20px;
     position: fixed;
     z-index: 100;
   `;

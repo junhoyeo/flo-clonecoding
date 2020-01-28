@@ -27,6 +27,7 @@ export default class SimpleSlider extends Component {
       border-radius: 6px;
     `;
 
+
     return (
       <Group>
         <Slider {...settings}>

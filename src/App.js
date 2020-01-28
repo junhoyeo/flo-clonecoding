@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider/Slider";
-import Player from "./components/Player";
+import Player from "./components/Player/Player";
 
 import Test from "./components/NavbarScrolltest";
 
