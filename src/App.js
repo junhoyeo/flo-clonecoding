@@ -5,8 +5,9 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider/Slider";
 import Player from "./components/Player/Player";
-
-import Test from "./components/NavbarScrolltest";
+import LatestMusic from "./components/LatestMusic";
+import Collection from "./components/Collection";
+import EditorsPick from "./components/Editorspick";
 
 const GlobalStyles = createGlobalStyle`
 @font-face {
@@ -35,7 +36,9 @@ function App() {
       <Navbar />
       <Wrap>
         <Slider />
-        <Test />
+        <LatestMusic />
+        <Collection />
+        <EditorsPick />
       </Wrap>
       <Player />
     </div>

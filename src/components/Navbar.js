@@ -6,7 +6,7 @@ export default function Navbar() {
     background-color: #ffffff;
     width: 100%;
     height: 95px;
-    margin: 0 20px 0 20px;
+    margin: 0 auto;
     position: fixed;
     z-index: 100;
   `;
@@ -37,7 +37,7 @@ export default function Navbar() {
   const RightContents = styled.span`
     float: right;
     margin-top: 43px;
-    /* margin-right: 11.5%; */
+    margin-right: 15px;
   `;
 
   const RightElement = styled.a`
