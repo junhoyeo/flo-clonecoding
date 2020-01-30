@@ -6,11 +6,11 @@ import Play from "../assets/play.png";
 import PlayH from "../assets/play-hover.png";
 
 
-import Collection0 from "../assets/album/Collection/Domestic-Ballads-Popularity.jpg";
-import Collection1 from "../assets/album/Collection/Domestic-Ballads-Latest.jpg";
-import Collection2 from "../assets/album/Collection/Pop-Popularity.jpg";
-import Collection3 from "../assets/album/Collection/Pop-Latest.jpg";
-import Collection4 from "../assets/album/Collection/Domestic-Dance-Electronic-Popularity.jpg";
+import Collection0 from "../assets/album/collection/Domestic-Ballads-Popularity.jpg";
+import Collection1 from "../assets/album/collection/Domestic-Ballads-Latest.jpg";
+import Collection2 from "../assets/album/collection/Pop-Popularity.jpg";
+import Collection3 from "../assets/album/collection/Pop-Latest.jpg";
+import Collection4 from "../assets/album/collection/Domestic-Dance-Electronic-Popularity.jpg";
 
 
 export default function Collection() {
