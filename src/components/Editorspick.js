@@ -130,6 +130,7 @@ export default function Editorspick() {
   position:relative;
   width:160px;
   bottom:32px;
+  height:42px;
 
   &:hover{
     color:#3f3fff;
