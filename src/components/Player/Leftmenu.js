@@ -19,7 +19,7 @@ export default function Leftmenu() {
     display: none;
   `;
 
-  const FavoriteButtonParent = styled.div`
+  const FavoriteButtonParent = styled.span`
     &:hover {
       cursor: pointer;
     }
@@ -43,7 +43,7 @@ export default function Leftmenu() {
     display: none;
   `;
 
-  const VolumeButtonParent = styled.div`
+  const VolumeButtonParent = styled.span`
     &:hover {
       cursor: pointer;
     }
@@ -67,7 +67,7 @@ export default function Leftmenu() {
     display: none;
   `;
 
-  const ListButtonParent = styled.div`
+  const ListButtonParent = styled.span`
     &:hover {
       cursor: pointer;
     }
@@ -83,9 +83,12 @@ export default function Leftmenu() {
 
 
   const Wrapper = styled.div`
-    display:flex;
-    margin-top:22px;
-    
+    margin-top:42px;
+    float:right;
+     @media screen and (max-width: 1600px) {
+      margin-right:55px;
+    }
+
   `;
 
 

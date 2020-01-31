@@ -9,6 +9,7 @@ export default function Navbar() {
     margin: 0 auto;
     position: fixed;
     z-index: 100;
+    top:0;
   `;
 
   const Logo = styled.img.attrs({

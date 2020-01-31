@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
 }
 body{
   font-family:'NBG', sans-serif;
+  min-width:1300px;
 }
 `;
 

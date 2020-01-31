@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Leftmenu from "./Leftmenu";
+import Controlarea from "./Controlarea"
 
 export default function Player() {
   const Player = styled.div`
@@ -12,16 +13,26 @@ export default function Player() {
     width: 100%;
     color: #ffffff;
     font-family: "NBG", sans-serif;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
+    z-index:1;
   `;
 
   const Wrapper = styled.div`
     width: 80%;
     height: 100%;
     margin-left: 197px;
+    margin-right: 197px;
     display: flex;
 
     @media screen and (max-width: 1600px) {
       margin-left:26px;
+      margin-right:26px;
+      width:100%;
+      min-width:1300px;
     }
   `;
 
@@ -50,7 +61,9 @@ export default function Player() {
   `;
 
   const MenuAlign = styled.div`
-  padding-left:84.6%;`
+  margin-right:px;
+  width:100%;
+  `
 
   return (
     <Player>
@@ -58,8 +71,8 @@ export default function Player() {
         <Albumcover />
         <Name>Paris In The Rain</Name>
         <Author>Lauv</Author>
+        <Controlarea />
         <MenuAlign><Leftmenu /></MenuAlign>
-
       </Wrapper>
     </Player>
   );

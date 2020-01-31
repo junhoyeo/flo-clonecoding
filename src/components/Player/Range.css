@@ -1,0 +1,23 @@
+    input[type='range'] {
+      overflow: hidden;
+      width: 399px;
+      height:6px;
+      -webkit-appearance: none;
+      background-color: #323232;
+    }
+    
+    input[type='range']:hover{
+      cursor:pointer;
+    }
+
+        input[type='range']:focus{
+      outline:none;
+    }
+
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 10px;
+      box-shadow: -399px 0 0 399px #3f3fff;
+    }

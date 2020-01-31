@@ -16,7 +16,6 @@ import Collection4 from "../assets/album/collection/Domestic-Dance-Electronic-Po
 export default function Collection() {
 
   const Wrapper = styled.div`
-    padding-top: 10px;
     display:flex;
     width:100%;
   `;
@@ -57,16 +56,15 @@ export default function Collection() {
 
 
   const AlbumLayout = styled.div`
-  width:190px;
+  width:175px;
   height:200px;
-  margin-right:10px;
+  margin-right:20px;
   `
 
   const AlbumCover = styled.img`
   width:175px;
   height:175px;
   border-radius:7px;
-  margin-left:6px;
   margin-bottom:6px;
   position:relative;
   opacity:1;
@@ -82,7 +80,6 @@ export default function Collection() {
   height:175px;
   background-color:Black;
   border-radius:7px;
-  margin-left:6px;
   margin-bottom:6px;
   position:absolute;
   opacity:1;

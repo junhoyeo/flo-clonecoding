@@ -56,16 +56,15 @@ export default function Editorspick() {
 
 
   const AlbumLayout = styled.div`
-  width:190px;
+  width:175px;
   height:230px;
-  margin-right:10px;
+  margin-right:20px;
   `
 
   const AlbumCover = styled.img`
   width:175px;
   height:175px;
   border-radius:7px;
-  margin-left:6px;
   margin-bottom:6px;
   position:relative;
   opacity:1;
@@ -81,7 +80,6 @@ export default function Editorspick() {
   height:175px;
   background-color:Black;
   border-radius:7px;
-  margin-left:6px;
   margin-bottom:6px;
   position:absolute;
   opacity:1;
@@ -140,7 +138,7 @@ export default function Editorspick() {
 
   const Decoration1 = styled.div`
   position:relative;
-  left:12px;
+  left:6px;
   bottom:284px;
   width:162px;
   height:162px;
@@ -152,7 +150,7 @@ export default function Editorspick() {
 
   const Decoration2 = styled.div`
   position:relative;
-  left:20px;
+  left:14px;
   bottom:453px;
   width:146px;
   height:146px;

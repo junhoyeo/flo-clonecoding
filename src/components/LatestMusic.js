@@ -60,7 +60,7 @@ export default function LatestMusic() {
     
     font-size:22px;
     font-weight: 600;
-    margin-bottom:25px;
+    margin-bottom:22px;
   `;
 
 
@@ -92,7 +92,10 @@ export default function LatestMusic() {
 
 
   const SelectRange = styled.div`
-      margin-left:81%;
+      float:right;
+      margin-right:10px;
+      bottom:50px;
+      position:relative;
  
     `
 
@@ -138,16 +141,15 @@ export default function LatestMusic() {
 
 
   const AlbumLayout = styled.div`
-  width:190px;
+  width:175px;
   height:210px;
-  margin-right:10px;
+  margin-right:20px;
   `
 
   const AlbumCover = styled.img`
   width:175px;
   height:175px;
   border-radius:7px;
-  margin-left:6px;
   margin-bottom:6px;
   position:relative;
   opacity:1;
@@ -163,7 +165,6 @@ export default function LatestMusic() {
   height:175px;
   background-color:Black;
   border-radius:7px;
-  margin-left:6px;
   margin-bottom:6px;
   position:absolute;
   opacity:1;
@@ -176,7 +177,7 @@ export default function LatestMusic() {
 
   const Albumline = styled.div`
   display:flex;
-  margin-bottom:45px;
+  margin-bottom:55px;
   `
 
   const Name = styled.a`
@@ -331,14 +332,11 @@ export default function LatestMusic() {
                 <Anglebtn src={RAngle} />
           <AnglebtnHover src={RAngleActive} />
         </Angle>
-        <SelectRange>
-          <Domestic>국내</Domestic>
-          <Overseas>해외</Overseas>
-        </SelectRange>
-
-
-
       </Wrapper>
+      <SelectRange>
+        <Domestic>국내</Domestic>
+        <Overseas>해외</Overseas>
+      </SelectRange>
 
       <Album />
     </Fragment>
