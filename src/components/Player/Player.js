@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Leftmenu from "./Leftmenu";
+import Rightmenu from "./Rightmenu";
 import Controlarea from "./Controlarea"
 
 export default function Player() {
@@ -72,7 +72,7 @@ export default function Player() {
         <Name>Paris In The Rain</Name>
         <Author>Lauv</Author>
         <Controlarea />
-        <MenuAlign><Leftmenu /></MenuAlign>
+        <MenuAlign><Rightmenu /></MenuAlign>
       </Wrapper>
     </Player>
   );
