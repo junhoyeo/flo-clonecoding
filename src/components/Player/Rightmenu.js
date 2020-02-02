@@ -86,7 +86,7 @@ export default function Leftmenu() {
     margin-top:42px;
     float:right;
      @media screen and (max-width: 1600px) {
-      margin-right:20px;
+      margin-right:60px;
     }
 
   `;

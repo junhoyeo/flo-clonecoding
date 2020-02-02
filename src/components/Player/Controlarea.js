@@ -87,8 +87,9 @@ export default function Controlarea() {
     const Wrapper = styled.div`
     display:flex;
     position:absolute;
+    width:315px;
     top:25px;
-    left:41.5%;
+    left:42.3%;
     @media screen and (max-width: 1600px) {
       left:40%;
     }
@@ -98,10 +99,11 @@ export default function Controlarea() {
     height:12px;
     position:relative;
     top:55px;
-    right:50%;
+    right:126%;
     
     @media screen and (max-width: 1600px) {
-      width:300px;}
+      width:300px;
+      right:99%;}
     `
 
 
