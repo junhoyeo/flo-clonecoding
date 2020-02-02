@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/flo-clonecoding/precache-manifest.07dfd80fd54e042be8eefc90634d5de3.js"
+  "/flo-clonecoding/precache-manifest.2d1791ffaf37c1e9c185b7a53d84ffde.js"
 );
 
 self.addEventListener('message', (event) => {
